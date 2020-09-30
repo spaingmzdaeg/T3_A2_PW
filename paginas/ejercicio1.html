@@ -4,87 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
+    <!--==========================Estilos===================================-->
+    <link rel="stylesheet" href="/css/estilo_formularios.css">
+    <!--==========================Estilos===================================-->
+    <link rel="stylesheet" href="/css/estilo_botones.css">
+    <!--==========================Estilos===================================-->
 
 </head>
 <body>
 
-    h3>ALTAS ALUMNOS</h3>
+    <h3>Calculadora CURP</h3>
 
     <form method="" action="" onsubmit="return validarFormulario()">
 
         <fieldset>
             <legend> &nbsp;&nbsp;&nbsp; Datos personales&nbsp;&nbsp;&nbsp;</legend>
 
-            <label>Contraseña:</label><br> 
-            <input type="password" id="caja_contraseña" name="caja_contraseña" 
+            <label>Nombres:</label><br> 
+            <input type="text" id="caja_nombres" name="caja_nombres" 
             required placeholder="Deben ser 8 caracateres" value="123"/>
             <br>
-            <label>Numero de control:</label><br>
-            <input type="text" maxlength="10" size="10" id="num_control" name="num_control" />
+            <label>Primer Apellido:</label><br>
+            <input type="text" maxlength="10" size="10" id="caja_primer_ap" name="caja_primer_ap" />
             <br>
-            <label>Nombre:</label><br>
-            <input type="text" id="caja_nombre" name="caja_nombre"/>
+            <label>Segundo Apellido:</label><br>
+            <input type="text" id="caja_segundo_ap" name="caja_segundo_ap"/>
             <br>
-            <label>Primer Ap.:</label> <input type="text" id="caja_primer_ap" name="caja_primer_ap"/>
+            <label>Dia:</label> <input type="number" min="1" max="31" id="dia" name="dia"/>
             <br>
-            <label>Segundo Ap.:</label> <input type="text" id="caja_segundo_ap" name="caja_segundo_ap"/>
+            <label>Mes:</label> 
+            <select id="mes" name="mes">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
             <br>
-            <label>Edad:</label> <input type="number" min="0" max="120" id="edad" name="edad"/>
+            <label>Anio:</label> <input type="number" id="caja_anio" name="caja_anio" value="2020"/>
             <br>
-            <label>Semestre:</label> 
-            <select id="semestre" name="semestre">
+            <label>Genero:</label> <select name="genero" id="genero">d" name="edad"/>
+                <option value="m">M</option>
+                <option value="f">F</option>
+            </select>
+            <br>
+            <label>Entidad:</label> 
+            <select id="entidad" name="entidad">
                 <option value="1">Primer</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
-
-            <br>
-            <label>Selecciona Carrera:</label> <br>
-            <label><input type="radio" id="" name="radio_carrera"/> Sistemas Computacionales</label>  <br>
-            <label><input type="radio" id="" name="radio_carrera"/> IM </label> <br>
-            <input type="radio" id="" name="radio_carrera" /> IIA  <br>
-            <input type="radio" id="" name="radio_carrera" /> LA  <br>
-            <input type="radio" id="" name="radio_carrera" /> LC  <br>
-
-            <br>
-            <input type="hidden" name="datos_ocultos">
-
-            <br>
-            <label>Selecciona actividades Extraescolares de interes:</label> <br>
-            <label><input type="checkbox" id="chk_deportes" name="chk_deportes"/> Deportes </label> <br>
-            <label><input type="checkbox" id="chk_danza" name="chk_danza" /> Danza </label> <br>
-            <label><input type="checkbox" id="chk_musica" name="chk_musica" /> Musica </label> <br>
-            <label><input type="checkbox" id="chk_banda" name="chk_banda" /> Banda de guerra </label> <br>
-
-            <br>
-            <label> Agregar fotografía: </label>
-            <input type="file" />
-
-            <br> 
-            <label>Correo electrónico:</label>
-            <input type="email" />
-
-            <br>
-            <br>
-            <label>Observaciones:</label>
-            <textarea rows="5" cols="50">
-                Escribe aqui...
-            </textarea>
-
             <br>
             <br>
             <hr>
-            <input type="button" value="CANCELAR">
-            <input type="submit" value="REGISTRAR">
+            <input type="button" value="LIMPIAR">
+            <input type="submit" value="CONSULTAR">
 
         </fieldset>
-    </form>
-
-
-
-    <p>
-        <a href="../pagina_inincio.html">REGRESAR A INICIO</a>
-    </p>
-    
+    </form>   
 </body>
 </html>
