@@ -1,5 +1,5 @@
 
-
+//documento js que llama la funcion principal
 function imprimirCURP(){
 var cajaCURP = document.getElementById('caja_curp');
 

@@ -1,3 +1,5 @@
+//documento js que calcula la curp
+
 function obtenerVocal( str ){
     var vocales = 'AEIOU';
 var i, c;

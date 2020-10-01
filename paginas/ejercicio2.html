@@ -30,7 +30,7 @@
       </div>
     </header>
 
-    <h3>Conversos Sistemas Numericos</h3>
+    <h3>Conversor Sistemas Numericos</h3>
 
     <form method="" action="" onsubmit="return validarFormulario()">
 
@@ -39,16 +39,22 @@
 
             <label>Ingrese Numero Decimal:</label> <input type="number" id="caja_decimal" name="caja_decimal"/>
             <br>
-            <label>BINARIO:</label> <input type="text" id="caja_binario" name="caja_binario"/>
+            <label>BINARIO:</label> <input type="text" id="caja_binario" name="caja_binario" readonly="readonly"/>
             <br>
-            <label>OCTAL:</label> <input type="text" id="caja_octal" name="caja_decimal"/>
+            <label>OCTAL:</label> <input type="text" id="caja_octal" name="caja_octal" readonly="readonly"/>
             <br>
-            <label>HEXADECIMAL:</label> <input type="text" id="caja_binario" name="caja_decimal"/>
+            <label>HEXADECIMAL:</label> <input type="text" id="caja_hexadecimal" name="caja_hexadecimal" readonly="readonly"/>
             <br>
 
             <input type="button" value="LIMPIAR">
-            <input type="submit" value="CALCULAR">
+            <input id="botonResultado" type="button" value="CONVERTIR" onclick= "imprimirConversion()" readonly='readonly'>
+            
         </fieldset>
-    </form>   
+    </form>
+    <!--================SCRIPTS===============-->
+    <script src="/js/conversor.js"></script>
+    <!--================SCRIPTS===============-->
+    <script src="/js/main_ej2.js"></script>
+    <!--================SCRIPTS===============-->   
 </body>
 </html>
