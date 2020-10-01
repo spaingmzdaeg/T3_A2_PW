@@ -26,7 +26,7 @@ function obtenerConsonante( str ){
 En la estructura de la CURP (posiciones 1-4) que en ocasiones forma una palabra cuya pronunciación se considera ofensiva para 
 los primerApellidorones socialmente establecidos, en cuyo caso la letra de la segunda posición se sustituye por una 'X'.*/
 
-function remplazarPalabra(){
+function remplazarPalabra( str ){
 //usar expresiones regulares
 
  var pal1 = new RegExp(/BUEI|BUEY|CACA|CACO|CAGA|CAGO|CAKA|CAKO|COGE|COJA|COJE|COJI|COJO|CULO|FETO|GUEY/);
@@ -55,7 +55,7 @@ function obtenerEntidad( entidad ){
 
 }
 
-function tabla(){
+function tabla(i,x){
     if(i >= '0' && i<= '9')
     {
         return x-48;
@@ -71,11 +71,10 @@ function tabla(){
 }
 }
 
-function obtenerUltimoDigito(){
+function obtenerUltimoDigito( curp ){
 
     var i, c, dv = 0;
-//en este punto, la variable curp tiene todo excepto el ultimo digito verificador
-//ejemplo: JIRA0302024MVZMVNA
+//verificar ultimo digito
 	for(i=0; i < curp.length; i++) 
 	{
 		c=tabla(curp.charAt(i), curp.charCodeAt(i));
@@ -108,13 +107,13 @@ function obtenerCURP( nombre, primerApellido,segundoApellido, fecha, genero, ent
         segundoApellido = 'X';
     }
 	
-	curp  = primerApellido.substring(0,1) + buscaVocal( primerApellido )+ segundoApellido.substring(0,1) + nombre.substring(0,2);
-	curp  = cambiaPalabra( curp );
+	curp  = primerApellido.substring(0,1) + obtenerVocal( primerApellido )+ segundoApellido.substring(0,1) + nombre.substring(0,2);
+	curp  = remplazarPalabra( curp );
 	curp += fecha.substring(8,10) + fecha.substring(3,5) + fecha.substring(0,2);
 	curp += (genero=='M'?'H':'M') + obtenerEntidad( entidad );
 	curp += obtenerConsonante( primerApellido ) + obtenerConsonante( segundoApellido ) + obtenerConsonante( nombre ) ;
 	curp += fecha.substring(6,8)=='19'?'0':'A';
-	curp += obtenerUltimdigito( curp );
+	curp += obtenerUltimoDigito( curp );
 	
 	return curp;
 

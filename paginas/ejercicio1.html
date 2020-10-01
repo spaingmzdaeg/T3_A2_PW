@@ -38,8 +38,7 @@
             <legend> &nbsp;&nbsp;&nbsp; Datos personales&nbsp;&nbsp;&nbsp;</legend>
 
             <label>Nombres:</label><br> 
-            <input type="text" id="caja_nombres" name="caja_nombres" 
-            required placeholder="Deben ser 8 caracateres"/>
+            <input type="text" id="caja_nombres" name="caja_nombres" />
             <br>
             <label>Primer Apellido:</label><br>
             <input type="text" maxlength="300" size="10" id="caja_primer_ap" name="caja_primer_ap" />
@@ -47,19 +46,19 @@
             <label>Segundo Apellido:</label><br>
             <input type="text" id="caja_segundo_ap" name="caja_segundo_ap"/>
             <br>
-            <label>Dia:</label> <input type="number" min="1" max="31" id="dia" name="dia"/>
+            <label>Dia:</label> <input type="number" min="1" max="31" id="dia" name="dia" value="1"/>
             <br>
             <label>Mes:</label> 
             <select id="mes" name="mes">
-                <option value="1">Enero</option>
-                <option value="2">Febrero</option>
-                <option value="3">Marzo</option>
-                <option value="4">Abril</option>
-                <option value="5">Mayo</option>
-                <option value="6">Junio</option>
-                <option value="7">Julio</option>
-                <option value="8">Agosto</option>
-                <option value="9">Septiembre</option>
+                <option value="01">Enero</option>
+                <option value="02">Febrero</option>
+                <option value="03">Marzo</option>
+                <option value="04">Abril</option>
+                <option value="05">Mayo</option>
+                <option value="06">Junio</option>
+                <option value="07">Julio</option>
+                <option value="08">Agosto</option>
+                <option value="09">Septiembre</option>
                 <option value="10">Octubre</option>
                 <option value="11">Noviembre</option>
                 <option value="12">Diciembre</option>
@@ -67,27 +66,64 @@
             <br>
             <label>Anio:</label> <input type="number" id="caja_anio" name="caja_anio" value="2020"/>
             <br>
-            <label>Genero:</label> <select name="genero" id="genero">d" name="edad"/>
+            <label>Genero:</label> <select name="genero" id="genero">
                 <option value="m">M</option>
                 <option value="f">F</option>
             </select>
             <br>
             <label>Entidad:</label> 
             <select id="entidad" name="entidad">
-                <option value="1">Primer</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="x"> - Elige un Estado- </option>
+        <option value="0">DISTRITO FEDERAL</option>
+		<option value="1">AGUASCALIENTES</option>
+		<option value="2">BAJA CALIFORNIA NORTE</option>
+		<option value="3">BAJA CALIFORNIA SUR</option>
+		<option value="4">CAMPECHE</option>
+		<option value="5">COAHUILA DE ZARAGOZA</option>
+		<option value="6">COLIMA</option>
+		<option value="7">CHIAPAS</option>
+		<option value="8">CHIHUAHUA</option>
+		<option value="9">DURANGO</option>
+		<option value="10">GUANAJUATO</option>
+		<option value="11">GUERRERO</option>
+		<option value="12">HIDALGO</option>
+		<option value="13">JALISCO</option>
+		<option value="14">ESTADO DE MÉXICO</option>
+		<option value="15">MICHOACÁN DE OCAMPO</option>
+		<option value="16">MORELOS</option>
+		<option value="17">NAYARIT</option>
+		<option value="18">NUEVO LEÓN</option>
+		<option value="19">OAXACA</option>
+		<option value="20">PUEBLA DE LOS ÁNGELES</option>
+		<option value="21">QUERÉTARO</option>
+		<option value="22">QUINTANA ROO</option>
+		<option value="23">SAN LUIS POTOSÍ</option>
+		<option value="24">SINALOA</option>
+		<option value="25">SONORA</option>
+		<option value="26">TABASCO</option>
+		<option value="27">TAMAULIPAS</option>
+		<option value="28">TLAXCALA</option>
+		<option value="29">VERACRUZ DE IGNACIO DE LA LLAVE</option>
+		<option value="30">YUCATÁN</option>
+		<option value="31">ZACATECAS</option>
+        <option value="32">EXTRANJERO</option>
+        
+        <label>CURP:</label><br>
+            <input type="text" maxlength="100" size="10" id="caja_curp" name="caja_curp" />
+            <br>
+
             </select>
             <br>
             <br>
             <hr>
             <input type="button" value="LIMPIAR">
-            <input type="submit" value="CONSULTAR">
+            <input id="botonResultado" type="button" value="CONSULTAR" onclick= "imprimirCURP()">
+            
 
         </fieldset>
     </form>
     <!--================SCRIPTS===============-->
-    <!--<script src="/js/curp.js"></script>-->
+    <script src="/js/curp.js"></script>
     <!--================SCRIPTS===============-->
     <script src="/js/main.js"></script>
     <!--================SCRIPTS===============-->
