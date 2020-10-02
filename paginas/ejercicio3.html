@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 3</title>
     <!--==========================Estilos===================================-->
-    <link rel="stylesheet" href="../css/estilo_formularios.css">
+    <link rel="stylesheet" href="../css/estilo_formularios.css" />
     <!--==========================Estilos===================================-->
-    <link rel="stylesheet" href="../css/estilo_botones.css">
+    <link rel="stylesheet" href="../css/estilo_botones.css" />
     <!--==========================Estilos===================================-->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css" />
     <!--==========================Estilos===================================-->
-
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1 id="ae">Ejercicios DOM</h1>
-    
-        <p>Selecione Ejercicio</p>
-    
-        <div class="nav">
-            <a href="../index.html" class="active">INICIO</a>  
-            <a href="../paginas/ejercicio1.html">Ejercicio 1</a> 
-            <a href="../paginas/ejercicio2.html">Ejercicio 2</a>
-            <a href="../paginas/ejercicio3.html">Ejercicio 3</a> 
-          
-           
+      <h1 id="ae">Ejercicios DOM</h1>
+
+      <p>Selecione Ejercicio</p>
+
+      <div class="nav">
+        <a href="../index.html" class="active">INICIO</a>
+        <a href="../paginas/ejercicio1.html">Ejercicio 1</a>
+        <a href="../paginas/ejercicio2.html">Ejercicio 2</a>
+        <a href="../paginas/ejercicio3.html">Ejercicio 3</a>
       </div>
     </header>
 
     <h3>Cadenas</h3>
 
     <form method="" action="" onsubmit="return validarFormulario()">
+      <fieldset>
+        <legend>&nbsp;&nbsp;&nbsp; Ejercicio Cadenas&nbsp;&nbsp;&nbsp;</legend>
 
-        <fieldset>
-            <legend> &nbsp;&nbsp;&nbsp; Ejercicio Cadenas&nbsp;&nbsp;&nbsp;</legend>
+        <label>Ingrese Cadena:</label>
+        <input type="text" id="caja_cadena" name="caja_cadena" />
+        <br />
+        <label>Ingrese Caracter a encontrar:</label>
+        <input type="text" id="caja_caracter" name="caja_caracter" />
+        <br />
+        <label>Cantidad de Vocales:</label>
+        <input type="number" id="caja_vocales" name="caja_vocales" />
+        <br />
+        <label>Cantidad de Consonantes:</label>
+        <input type="number" id="caja_consonantes" name="caja_consonantes" />
+        <br />
+        <label>Cantidad de aparicion de caracter:</label>
+        <input type="number" id="caja_aparicion" name="caja_aparicion" />
+        <br />
+        <label>Cantidad de Cadena Loca:</label>
+        <input type="text" id="caja_cadena_loca" name="caja_cadena_loca" />
 
-            <label>Ingrese Cadena:</label> <input type="text" id="caja_cadena" name="caja_cadena"/>
-            <br>
-            <label>Ingrese Caracter a encontrar:</label> <input type="text" id="caja_caracter" name="caja_caracter"/>
-            <br>
-            <label>Cantidad de Vocales:</label> <input type="number" id="caja_vocales" name="caja_vocales"/>
-            <br>
-            <label>Cantidad de Consonantes:</label> <input type="number" id="caja_consonantes" name="caja_consonantes"/>
-            <br>
-            <label>Cantidad de aparicion de caracter:</label> <input type="number" id="caja_aparicion" name="caja_aparicion"/>
-            <br>
-            <label>Cantidad de Cadena Loca:</label> <input type="text" id="caja_cadena_loca" name="caja_cadena_loca"/>
-
-
-            <input type="button" value="LIMPIAR">
-            <input id="botonResultado" type="button" value="OBTENER" onclick= "imprimirApariciones()" readonly='readonly'>
-        </fieldset>
+        <input type="button" value="LIMPIAR" />
+        <input
+          id="botonResultado"
+          type="button"
+          value="OBTENER"
+          onclick="imprimirApariciones()"
+          readonly="readonly"
+        />
+      </fieldset>
     </form>
     <!--================SCRIPTS===============-->
     <script src="/js/cadena.js"></script>
     <!--================SCRIPTS===============-->
     <script src="/js/main_ej3.js"></script>
-    <!--================SCRIPTS===============-->    
-</body>
+    <!--================SCRIPTS===============-->
+  </body>
 </html>

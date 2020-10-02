@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 2</title>
     <!--==========================Estilos===================================-->
-    <link rel="stylesheet" href="../css/estilo_formularios.css">
+    <link rel="stylesheet" href="../css/estilo_formularios.css" />
     <!--==========================Estilos===================================-->
-    <link rel="stylesheet" href="../css/estilo_botones.css">
+    <link rel="stylesheet" href="../css/estilo_botones.css" />
     <!--==========================Estilos===================================-->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css" />
     <!--==========================Estilos===================================-->
-
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1 id="ae">Ejercicios DOM</h1>
-    
-        <p>Selecione Ejercicio</p>
-    
-        <div class="nav">
-            <a href="../index.html" class="active">INICIO</a>  
-            <a href="../paginas/ejercicio1.html">Ejercicio 1</a> 
-            <a href="../paginas/ejercicio2.html">Ejercicio 2</a>
-            <a href="../paginas/ejercicio3.html">Ejercicio 3</a> 
-          
-           
+      <h1 id="ae">Ejercicios DOM</h1>
+
+      <p>Selecione Ejercicio</p>
+
+      <div class="nav">
+        <a href="../index.html" class="active">INICIO</a>
+        <a href="../paginas/ejercicio1.html">Ejercicio 1</a>
+        <a href="../paginas/ejercicio2.html">Ejercicio 2</a>
+        <a href="../paginas/ejercicio3.html">Ejercicio 3</a>
       </div>
     </header>
 
     <h3>Conversor Sistemas Numericos</h3>
 
     <form method="" action="" onsubmit="return validarFormulario()">
+      <fieldset>
+        <legend>&nbsp;&nbsp;&nbsp; Sistemas NUmericos&nbsp;&nbsp;&nbsp;</legend>
 
-        <fieldset>
-            <legend> &nbsp;&nbsp;&nbsp; Sistemas NUmericos&nbsp;&nbsp;&nbsp;</legend>
+        <label>Ingrese Numero Decimal:</label>
+        <input type="number" id="caja_decimal" name="caja_decimal" />
+        <br />
+        <label>BINARIO:</label>
+        <input
+          type="text"
+          id="caja_binario"
+          name="caja_binario"
+          readonly="readonly"
+        />
+        <br />
+        <label>OCTAL:</label>
+        <input
+          type="text"
+          id="caja_octal"
+          name="caja_octal"
+          readonly="readonly"
+        />
+        <br />
+        <label>HEXADECIMAL:</label>
+        <input
+          type="text"
+          id="caja_hexadecimal"
+          name="caja_hexadecimal"
+          readonly="readonly"
+        />
+        <br />
 
-            <label>Ingrese Numero Decimal:</label> <input type="number" id="caja_decimal" name="caja_decimal"/>
-            <br>
-            <label>BINARIO:</label> <input type="text" id="caja_binario" name="caja_binario" readonly="readonly"/>
-            <br>
-            <label>OCTAL:</label> <input type="text" id="caja_octal" name="caja_octal" readonly="readonly"/>
-            <br>
-            <label>HEXADECIMAL:</label> <input type="text" id="caja_hexadecimal" name="caja_hexadecimal" readonly="readonly"/>
-            <br>
-
-            <input type="button" value="LIMPIAR">
-            <input id="botonResultado" type="button" value="CONVERTIR" onclick= "imprimirConversion()" readonly='readonly'>
-            
-        </fieldset>
+        <input type="button" value="LIMPIAR" />
+        <input
+          id="botonResultado"
+          type="button"
+          value="CONVERTIR"
+          onclick="imprimirConversion()"
+          readonly="readonly"
+        />
+      </fieldset>
     </form>
     <!--================SCRIPTS===============-->
     <script src="/js/conversor.js"></script>
     <!--================SCRIPTS===============-->
     <script src="/js/main_ej2.js"></script>
-    <!--================SCRIPTS===============-->   
-</body>
+    <!--================SCRIPTS===============-->
+  </body>
 </html>

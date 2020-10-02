@@ -1,71 +1,72 @@
-form{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid blue;
-    height: 550px;
+form {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  height: 550px;
 }
 
-input[type = text], input[type = password]{
-    width: 80%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid blue;
-    height: 40px;
-    font-size: medium;
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  height: 40px;
+  font-size: medium;
 }
 
-input[type = number]{
-    width: 50%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid blue;
-    height: 25px;
-    font-size: medium    
+input[type="number"] {
+  width: 50%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  height: 25px;
+  font-size: medium;
 }
 
 select {
-    width: 50%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid blue;
-    height: 25px;
-    font-size: medium
+  width: 50%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  height: 25px;
+  font-size: medium;
 }
 
-label{
-    margin-top: 200px;
+label {
+  margin-top: 200px;
 }
 
-input[type = submit] {
-    width: 40%;
-    background-color: blue;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+input[type="submit"] {
+  width: 40%;
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  input[type = button] {
-    width: 40%;
-    background-color:gray;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+input[type="button"] {
+  width: 40%;
+  background-color: gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  #botonResultado{
-    width: 40%;
-    background-color:blue;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+#botonResultado {
+  width: 40%;
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
